@@ -146,5 +146,8 @@
       }
     }
   },
-  "defaultProject": "pruebas-con-rutas"
+  "defaultProject": "pruebas-con-rutas",
+  "cli": {
+    "analytics": false
+  }
 }

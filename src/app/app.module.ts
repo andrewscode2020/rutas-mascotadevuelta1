@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 // COMPONENTES (declarations):
 // app:
@@ -14,6 +15,7 @@ import { ReportaUnaMascotaComponent } from './componentes/reporta-una-mascota/re
 import { CasosFelicesComponent } from './componentes/casos-felices/casos-felices.component';
 import { IngresaComponent } from './componentes/ingresa/ingresa.component';
 import { RegistrateComponent } from './componentes/registrate/registrate.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,10 @@ import { RegistrateComponent } from './componentes/registrate/registrate.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
